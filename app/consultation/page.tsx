@@ -7,7 +7,6 @@ import { motion } from "framer-motion"
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 
-// 1. Define the different content per category
 const CATEGORY_CONTENT: any = {
   "Piles": {
     title: "बवासीर - भगन्दर - फिशर",
@@ -48,7 +47,7 @@ const CATEGORY_CONTENT: any = {
 
 export default function ConsultationPage() {
   const searchParams = useSearchParams()
-  const categoryKey = searchParams.get('cat') || "Piles" // Default to Piles
+  const categoryKey = searchParams.get('cat') || "Piles"
   const diseaseName = searchParams.get('disease') || "इस रोग"
   const data = CATEGORY_CONTENT[categoryKey] || CATEGORY_CONTENT["Piles"]
 
@@ -56,7 +55,7 @@ export default function ConsultationPage() {
     <>
     <Header />
     <div className="min-h-screen bg-white pb-10 pt-24">
-      {/* SECTION 1: YELLOW HERO (From Screenshot 7.17.07 PM) */}
+      
       <div className="bg-gradient-to-br from-secondary via-background to-secondary py-8 border-yellow-200">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-2xl md:text-4xl font-bold text-gray-800 mb-2">
@@ -79,7 +78,7 @@ export default function ConsultationPage() {
       <div className="container mx-auto px-4 py-10">
         <div className="grid lg:grid-cols-2 gap-12">
           
-          {/* SECTION 2: PRODUCT INFO (From your provided Kidney Stone / Piles screens) */}
+        
           <div className="space-y-6">
              <p className="text-gray-500 text-sm border-b pb-2">समस्त जटिल समस्याओं के समाधान के लिए एक मात्र संस्थान</p>
              
@@ -116,7 +115,7 @@ export default function ConsultationPage() {
              </div>
           </div>
 
-          {/* SECTION 3: THE FORM (From Screenshot 7.17.07 PM) */}
+          
           <div className="sticky top-24">
             <div className="bg-white p-8 rounded-3xl border border-primary-100 shadow-xl">
               <h3 className="text-xl font-bold mb-6 text-center">विशेषज्ञ सलाह के लिए फॉर्म भरें</h3>
