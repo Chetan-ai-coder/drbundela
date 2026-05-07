@@ -110,8 +110,9 @@ export function HeroSection() {
                 <Image
                   src="Dr Bundela/Doctor/doctor-Hero.JPG"
                   alt="Dr. R.S.S. Bundela - Homeopathic Doctor"
-                  fill
-                  className="object-cover object-center"
+                  width={600}
+                  height={600}
+                  className="w-full h-full object-cover object-center"
                   priority
                 />
 

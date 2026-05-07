@@ -17,8 +17,8 @@ export default function imagekitLoader({
     return src;
   }
 
-  // Use environment variable for URL endpoint
-  const urlEndpoint = process.env.NEXT_PUBLIC_IMAGEKIT_URL_ENDPOINT || "https://ik.imagekit.io/agenticimg";
+  // ImageKit URL endpoint
+  const urlEndpoint = "https://ik.imagekit.io/agenticimg";
 
   // Remove leading slash if present
   const cleanSrc = src.startsWith("/") ? src.slice(1) : src;

@@ -44,8 +44,9 @@ export default function AboutPage() {
                     <Image
                       src="Dr Bundela/Doctor/doctor-about-full.jpg"
                       alt="Dr. R.S.S. Bundela"
-                      fill 
-                      className="object-cover"
+                      width={500}
+                      height={650}
+                      className="w-full h-full object-cover"
                       priority
                     />
                   </div>

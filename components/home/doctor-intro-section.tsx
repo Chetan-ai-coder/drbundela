@@ -33,8 +33,9 @@ export function DoctorIntroSection() {
                 <Image
                   src="Dr Bundela/Doctor/doctor-about.jpg"
                   alt={t.name}
-                  fill
-                  className="object-cover"
+                  width={500}
+                  height={600}
+                  className="w-full h-full object-cover"
                 />
               </div>
 
