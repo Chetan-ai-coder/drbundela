@@ -1,4 +1,5 @@
 "use client"
+export const dynamic = "force-dynamic";
 
 import { useSearchParams } from 'next/navigation'
 import { Phone, CheckCircle2, ShieldCheck, Truck, Users, Star } from "lucide-react"
