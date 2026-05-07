@@ -31,7 +31,7 @@ export function DoctorIntroSection() {
 
               <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/Dr Bundela/Doctor/doctor-about.jpg"
+                  src="/doctor-about.jpg"
                   alt={t.name}
                   fill
                   className="object-cover"

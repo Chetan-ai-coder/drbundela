@@ -47,7 +47,7 @@ export function WelcomeModal() {
                         {/* Image Section - Using your provided visual style */}
                         <div className="relative h-64 w-full">
                             <Image
-                                src="/Dr Bundela/Doctor/Homoeo"
+                                src="/Homoeopathy.jpg"
                                 alt="Natural Healing"
                                 fill
                                 className="object-cover object-center"

@@ -108,7 +108,7 @@ export function HeroSection() {
               {/* Main Image Container */}
               <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-primary/20 to-primary/5">
                 <Image
-                  src="/Dr Bundela/Doctor/doctor-Hero.JPG"
+                  src="/doctor-hero.jpg"
                   alt="Dr. R.S.S. Bundela - Homeopathic Doctor"
                   fill
                   className="object-cover object-center"

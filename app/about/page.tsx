@@ -42,7 +42,7 @@ export default function AboutPage() {
                   <div className="absolute -bottom-6 -right-4 w-48 h-48 bg-primary rounded-3xl" />
                   <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl">
                     <Image
-                      src="/Dr Bundela/Doctor/doctor-about-full.jpg"
+                      src="/doctor-full.jpg"
                       alt="Dr. R.S.S. Bundela"
                       fill 
                       className="object-cover"

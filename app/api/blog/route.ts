@@ -1,9 +1,20 @@
 import { NextRequest, NextResponse } from "next/server";
-import { connectDB } from "@/lib/mongodb";
-import Post from "@/models/Post";
+
+// Check if MongoDB is configured
+const hasMongoDBConfig = process.env.MONGODB_URI;
 
 export async function POST(req: NextRequest) {
   try {
+    if (!hasMongoDBConfig) {
+      return NextResponse.json(
+        { error: "MongoDB not configured" },
+        { status: 503 }
+      );
+    }
+
+    const { connectDB } = await import("@/lib/mongodb");
+    const Post = (await import("@/models/Post")).default;
+    
     await connectDB();
     const data = await req.json();
 
@@ -29,12 +40,18 @@ export async function POST(req: NextRequest) {
 
 export async function GET() {
   try {
+    if (!hasMongoDBConfig) {
+      return NextResponse.json([], { status: 200 });
+    }
+
+    const { connectDB } = await import("@/lib/mongodb");
+    const Post = (await import("@/models/Post")).default;
+    
     await connectDB();
-    // Changed sort to createdAt for guaranteed sorting stability
     const posts = await Post.find().sort({ createdAt: -1 });
     return NextResponse.json(posts, { status: 200 });
   } catch (error) {
     console.error("GET API Error:", error);
-    return NextResponse.json({ error: "Failed to fetch posts" }, { status: 500 });
+    return NextResponse.json({ error: "Failed to fetch posts", data: [] }, { status: 200 });
   }
 }
