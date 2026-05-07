@@ -36,6 +36,7 @@ export function DoctorIntroSection() {
                   width={500}
                   height={600}
                   className="w-full h-full object-cover"
+                  crossOrigin="anonymous"
                 />
               </div>
 

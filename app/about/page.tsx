@@ -48,6 +48,7 @@ export default function AboutPage() {
                       height={650}
                       className="w-full h-full object-cover"
                       priority
+                      crossOrigin="anonymous"
                     />
                   </div>
                 </div>

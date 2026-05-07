@@ -114,6 +114,7 @@ export function HeroSection() {
                   height={600}
                   className="w-full h-full object-cover object-center"
                   priority
+                  crossOrigin="anonymous"
                 />
 
               </div>
